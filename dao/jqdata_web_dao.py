@@ -7,8 +7,11 @@ from config.configurations import *
 class JQData(object):
 
     def __init__(self):
-        auth(trader_config.get('jq_auth','id'),trader_config.get('jq_auth','password'))
+        id = trader_config.get('jq_auth', 'id')
+        passwd = trader_config.get('jq_auth', 'password')
 
+        # auth(trader_config.get('jq_auth','id'),trader_config.get('jq_auth','password'))
+        auth(id,passwd)
 
     def check_auth(self):
         return is_auth()
@@ -17,7 +20,4 @@ class JQData(object):
 
 if __name__ == "__main__":
     jq_obj = JQData()
-    jq_obj.check_auth()
-
-
-
+    print(jq_obj.check_auth())
