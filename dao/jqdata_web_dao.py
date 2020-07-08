@@ -20,4 +20,7 @@ class JQData(object):
 
 if __name__ == "__main__":
     jq_obj = JQData()
-    print(jq_obj.check_auth())
+    # print(jq_obj.check_auth())
+
+    # auth('18515912709','Jq654321')
+    print(is_auth())
