@@ -17,10 +17,15 @@ class JQData(object):
         return is_auth()
 
 
+    def check_quota(self):
+        return get_query_count()
+
+
+    def get_all_securities(self):
+        return get_all_securities()
 
 if __name__ == "__main__":
     jq_obj = JQData()
-    # print(jq_obj.check_auth())
-
-    # auth('18515912709','Jq654321')
     print(is_auth())
+    print(jq_obj.check_quota())
+    # print(jq_obj.get_all_securities())
