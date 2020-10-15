@@ -7,6 +7,7 @@ from config.mysql_config import MysqlConfig
 
 from sqlalchemy import create_engine
 
+
 logger = logging.getLogger(__file__)
 
 class MysqlDBObject(MysqlConfig):
